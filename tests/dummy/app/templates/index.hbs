@@ -1,0 +1,32 @@
+<!-- Target -->
+<input id="foo" value="https://github.com/zenorocha/clipboard.js.git">
+
+<br>
+
+<!-- Trigger -->
+{{#clip-board target="#foo" onSuccess="onSuccess" onError="onError"}}
+  Cut to clipboard
+{{/clip-board}}
+
+<br><br>
+
+<!-- Target -->
+<textarea id="bar">Mussum ipsum cacilds...</textarea>
+
+<br>
+
+<!-- Trigger -->
+{{#clip-board action="cut" target="#bar" onSuccess="onSuccess" onError="onError"}}
+  Cut to clipboard
+{{/clip-board}}
+
+<br><br>
+
+<!-- Trigger -->
+{{#clip-board text="Just because you can doesn't mean you should — clipboard.js" onSuccess="onSuccess" onError="onError"}}
+  Cut to clipboard
+{{/clip-board}}
+
+<br><br>
+
+
