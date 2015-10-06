@@ -15,6 +15,17 @@ $ ember install ember-clipboard
 
 View a live demo here: [https://jpadilla.github.io/ember-clipboard/][demo]
 
+## Example
+
+```handlebars
+<!-- Target -->
+<input id="foo" type="text" value="https://github.com/jpadilla/ember-clipboard.git">
+
+<!-- Trigger -->
+{{#clip-board class="btn" target="#foo"}}
+  Click to copy
+{{/clip-board}}
+```
 
 [demo]: https://jpadilla.github.io/ember-clipboard/
 [clipboard-js]: https://zenorocha.github.io/clipboard.js/
