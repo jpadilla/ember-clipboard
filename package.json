@@ -1,7 +1,7 @@
 {
   "name": "ember-clipboard",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0",
+  "description": "An Ember.js component for clipboard.js",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -37,7 +37,10 @@
     "ember-try": "0.0.6"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "clipboard",
+    "copy",
+    "cut"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.3",

@@ -1,25 +1,15 @@
-# Ember-clipboard
+# ember-clipboard
+[![Build Status](https://travis-ci.org/jpadilla/ember-clipboard.svg?branch=master)](https://travis-ci.org/jpadilla/ember-clipboard) [![Ember Observer Score](http://emberobserver.com/badges/ember-clipboard.svg)](http://emberobserver.com/addons/ember-clipboard)
 
-This README outlines the details of collaborating on this Ember addon.
+
+This is an Ember.js addon component for [clipboard.js](https://zenorocha.github.io/clipboard.js/).
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```bash
+$ ember install ember-clipboard
+```
 
-## Running
+## Live Demo
 
-* `ember server`
-* Visit your app at http://localhost:4200.
-
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+View a live demo here: https://jpadilla.github.io/ember-clipboard/
