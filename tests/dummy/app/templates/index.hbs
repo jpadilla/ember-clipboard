@@ -1,32 +1,90 @@
-<!-- Target -->
-<input id="foo" value="https://github.com/zenorocha/clipboard.js.git">
+<div class="container">
+  <div class="one-half column centered">
+    <div class="example">
+      <div class="input-group">
+        <!-- Target -->
+        <input id="foo" type="text" value="https://github.com/zenorocha/clipboard.js.git">
+        <span class="input-group-button">
+          <!-- Trigger -->
+          {{#clip-board class="btn" target="#foo"}}
+            <span class="octicon octicon-clippy"></span>
+          {{/clip-board}}
+        </span>
+      </div>
+    </div>
+    <div class="highlight">
+      <pre>
+        <code class="hbs">
+&lt;!-- Target --&gt;
+&lt;input id=&quot;foo&quot; type=&quot;text&quot; value=&quot;https://github.com/jpadilla/ember-clipboard.git&quot;&gt;
 
-<br>
+&lt;!-- Trigger --&gt;
+\{{#clip-board class=&quot;btn&quot; target=&quot;#foo&quot;}}
+  &lt;span class=&quot;octicon octicon-clippy&quot;&gt;&lt;/span&gt;
+\{{/clip-board}}
+        </code>
+      </pre>
+    </div>
 
-<!-- Trigger -->
-{{#clip-board target="#foo" onSuccess="onSuccess" onError="onError"}}
-  Cut to clipboard
-{{/clip-board}}
+    <div class="example">
+      <div class="input-group">
+        <!-- Target -->
+        <textarea id="bar" cols="62" rows="5" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga.</textarea>
+      </div>
+      <div class="form-actions">
+        <!-- Trigger -->
+        {{#clip-board class="btn" action="cut" target="#bar"}}
+          Cut to clipboard
+        {{/clip-board}}
+      </div>
+    </div>
+    <div class="highlight">
+      <pre>
+        <code class="hbs">
+&lt;!-- Target --&gt;
+&lt;textarea id=&quot;bar&quot; cols=&quot;62&quot; rows=&quot;5&quot; autocomplete=&quot;off&quot; autocorrect=&quot;off&quot; autocapitalize=&quot;off&quot; spellcheck=&quot;false&quot;&gt;Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra l&Atilde;&iexcl; , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. M&Atilde;&copy; faiz elementum girarzis, nisi eros vermeio, in elementis m&Atilde;&copy; pra quem &Atilde;&copy; amistosis quis leo. Manduma pindureta quium dia nois paga.&lt;/textarea&gt;
 
-<br><br>
+&lt;!-- Trigger --&gt;
+\{{#clip-board class=&quot;btn&quot; action=&quot;cut&quot; target=&quot;#bar&quot;}}
+Cut to clipboard
+\{{/clip-board}}
+        </code>
+      </pre>
+    </div>
 
-<!-- Target -->
-<textarea id="bar">Mussum ipsum cacilds...</textarea>
+    <div class="example">
+      <!-- Trigger -->
+      {{#clip-board class="btn" text="Action... Cut!"}}
+        Copy to clipboard
+      {{/clip-board}}
+    </div>
+    <div class="highlight">
+      <pre>
+        <code class="hbs">
+&lt;!-- Trigger --&gt;
+\{{#clip-board text=&quot;Action... Cut!&quot;}}
+  Copy to clipboard
+\{{/clip-board}}
+        </code>
+      </pre>
+    </div>
 
-<br>
+    <div class="example">
+      <!-- Trigger -->
+      {{#clip-board class="btn" text="Action... Cut!" onSuccess="onSuccess" onError="onError"}}
+        Copy to clipboard
+      {{/clip-board}}
+    </div>
+    <div class="highlight">
+      <pre>
+        <code class="hbs">
+&lt;!-- Trigger --&gt;
+\{{#clip-board class=&quot;btn&quot; text=&quot;Action... Cut!&quot; onSuccess=&quot;onSuccess&quot; onError=&quot;onError&quot;}}
+  Copy to clipboard
+\{{/clip-board}}
+        </code>
+      </pre>
+    </div>
 
-<!-- Trigger -->
-{{#clip-board action="cut" target="#bar" onSuccess="onSuccess" onError="onError"}}
-  Cut to clipboard
-{{/clip-board}}
-
-<br><br>
-
-<!-- Trigger -->
-{{#clip-board text="Just because you can doesn't mean you should — clipboard.js" onSuccess="onSuccess" onError="onError"}}
-  Cut to clipboard
-{{/clip-board}}
-
-<br><br>
-
-
+  </div>
+</div>
